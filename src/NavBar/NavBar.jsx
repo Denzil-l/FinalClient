@@ -11,6 +11,9 @@ export const NavBar = () => {
             const res = await axios.delete("https://finalserver-lne5.onrender.com/auth/logout");
             if (res.status === 200) {
                 setAuthenticated(false)
+                localStorage.setItem("userId", 0);
+                localStorage.setItem("accessToken", '');
+
                 navigate("/login");
             }
         } catch (e) {
