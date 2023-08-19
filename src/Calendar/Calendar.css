@@ -1,0 +1,43 @@
+.calendar{
+    margin-top: 25px;
+    width: 90%;
+    
+    
+    color: #9f9b9b;
+    cursor: pointer;
+    font-family: Open Sans, Sans-serif;
+    
+    font-size: 12px;
+    letter-spacing: 4px;
+    text-shadow: rgb(0, 0, 0) 0px 1px 1px;
+    line-height: normal;
+
+
+}
+.grid{
+    background:  #161616;
+    margin: 0 auto;
+
+    border: 2px solid #6d6b6b7b;
+    border-radius: 5px;
+}
+.cell {
+    padding: 0px 4px;
+    border: 1px solid #6d6b6b7b;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cell:hover{
+    box-shadow: 0px 0px 8px 0px rgba(255, 140, 57, 0.8);
+}
+.description-cell:hover,.date-cell:hover{
+    box-shadow: none;
+}
+
+.today{
+    background: rgba(251, 58, 0, 0.577);
+}
+  
