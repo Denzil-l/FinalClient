@@ -44,6 +44,7 @@ export const SignInUp = (props) => {
                     setAuthenticated(true)
                     setUserId(response.data.token)
                     localStorage.setItem("userId", response.data.token);
+                    localStorage.setItem("accessToken", response.data.accessToken);
 
                     console.log(userId)
                     navigate('/')

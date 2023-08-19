@@ -15,7 +15,9 @@ const Verify = (props) => {
 
     const VerifyToken = async () => {
         try {
-            const response = await axios.get('https://finalserver-lne5.onrender.com/auth/verify')
+            const response = await axios.post('https://finalserver-lne5.onrender.com/auth/verify', {
+                accessToken: localStorage.getItem('accessToken')
+            })
             if (response.status == 200) {
                 return setAuthenticated('true')
             } else {
