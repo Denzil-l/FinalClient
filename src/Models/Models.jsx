@@ -28,9 +28,9 @@ export const Models = () => {
             <div className="models">
                 {modelType ? (
                     <div>
-                        <Scroll to='description' smooth={true} className="circle three" onClick={() => changeAbout(1)}><h2 className='movingleft'>Bio</h2></Scroll>
-                        <Scroll to='description' smooth={true} className="circle three" onClick={() => changeAbout(2)}><h2 className='movingbottom'>Psycho</h2></Scroll>
-                        <Scroll to='description' smooth={true} className="circle three" onClick={() => changeAbout(3)}><h2 className='movingright'>Social</h2></Scroll>
+                        <Scroll to='description' smooth={true} className="circle three" onClick={() => changeAbout(0)}><h2 className='movingleft'>Bio</h2></Scroll>
+                        <Scroll to='description' smooth={true} className="circle three" onClick={() => changeAbout(1)}><h2 className='movingbottom'>Psycho</h2></Scroll>
+                        <Scroll to='description' smooth={true} className="circle three" onClick={() => changeAbout(2)}><h2 className='movingright'>Social</h2></Scroll>
                     </div>
                 ) : (
                     <div>
