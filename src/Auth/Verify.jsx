@@ -1,13 +1,11 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
-import { useNavigate } from "react-router-dom"
 import { AuthContext } from "../AuthContext"
 import { useContext } from "react"
 
 
 const Verify = (props) => {
     const { authenticated, setAuthenticated } = useContext(AuthContext);
-    const navigate = useNavigate()
     const [check, setCheck] = useState(false)
     useEffect(() => {
         setCheck(props.check)
@@ -23,9 +21,14 @@ const Verify = (props) => {
             } else {
                 setAuthenticated('false')
             }
+            console.log(`Аутенфикация ${authenticated}`)
+
         } catch (error) {
             setAuthenticated(false)
+            console.log(`Аутенфикация ${authenticated}`)
+
         }
+
     }
 
     if ((props.check && authenticated) || (!props.check && !authenticated)) {
