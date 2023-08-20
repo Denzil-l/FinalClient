@@ -10,6 +10,8 @@
     line-height: 20px;
     text-decoration:none;
     overflow: hidden;
+    background: url('./Images/BG.jpg') no-repeat;
+    background-size: cover;
 }
 a{
     color: #FF8C39;
